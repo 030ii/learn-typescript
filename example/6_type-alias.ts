@@ -12,12 +12,41 @@ function sum(a: SumParameter, b: SumParameter) {
 }
 
 // #2
-type Person = {
+// 타입 별칭으로 정의
+type Person1 = {
   name: string;
   age: number;
 };
 
-function getPerson(): Person {
+// 인터페이스로 정의 
+interface Person2 {
+  name: string;
+  age: number;
+};
+
+let chang1: Person1 = {
+  name: "챙",
+  age: 20,
+};
+let chang2: Person2 = {
+  name: '챙',
+  age: 20
+}
+
+
+// 모든 타입에는 별칭을 붙일 수 있다.
+type MyString = string;
+let str1: MyString = 'hello';
+
+type Todo = { id: string; title: string; done: boolean };
+function getTodo(todo: Todo) {
+  // ..
+}
+
+// 타입 별칭은 확장(상속)이 불가능하다.
+// 인터페이스는 확장(상속)이 가능하다.
+
+function getPerson(): Person1 {
   // ...
 }
 

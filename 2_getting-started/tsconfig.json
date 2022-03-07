@@ -1,0 +1,12 @@
+// tsconfig 설정값 : https://www.typescriptlang.org/tsconfig
+{
+  "compilerOptions": {
+    "allowJs": true, // 프로젝트 안에 js를 허용
+    "checkJs": true, // 타입검사 기능 // @ts-check같은 기능
+    "noImplicitAny": true // 반드시 타입 지정 (타입 생략 x, 기본 타입(any)이라도 명시적으로 작성해야 함)
+  }
+}
+
+// # ts -> js 변환 테스트
+// 타입스크립트 플레이그라운드 : https://www.typescriptlang.org/play
+// 바벨 : https://babeljs.io/
