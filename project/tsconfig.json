@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "allowJs": true, // 프로젝트에 js를 허용
+        "target": "ES5", // ts 파일을 어떤 버전의 js로 바꿔줄지
+        "outDir": "./dist", // ts 결과물이 어디에 들어갈지
+        "moduleResolution": "Node", 
+        "lib": ["ES2015", "DOM", "DOM.Iterable"],
+        "noImplicitAny": true,
+        "typeRoots": ["./node_modules/@types", "./types"],
+        "strict": true,
+    },
+    "include": ["./src/**/*"] // ts 컴파일 대상
+    // include 디폴트 값 : [“**/*”]
+    // exclude 디폴트 값 : [“node_modules”, “bower_components”, “jspm_packages”]
+}

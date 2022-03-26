@@ -1,3 +1,14 @@
+// @ts-check // js파일을 마치 ts 효과를 입힘
+// JSDoc으로 타입 시스템 입히기
+// /**
+//  * @typedef {object} CovidSummary
+//  * @property {Array<number>} Country
+//  */
+// /**
+//  * @returns {Promise<CovidSummary>}
+//  */
+// function fetchCovidSummary ~~
+
 // utils
 function $(selector) {
   return document.querySelector(selector);
